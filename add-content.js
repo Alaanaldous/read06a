@@ -1,37 +1,18 @@
-var today= new Date();
+var today = new Date();
 var hourNow = today.getHours();
-var greeting;s
+var greeting;
 
-function test(morning, evening, noon, afternoon) {
 if (hourNow > 18) {
-greeting= 'Good evening!';
+    greeting = 'Good evening!';
 }
 else if (hourNow > 12) {
-greeting = ' Good afternoon!';
+    greeting = 'Good afternoon!';
 }
 else if (hourNow > 0) {
-greeting = 'Good morni ng!';
+    greeting = 'Good morning!';
 }
 else {
-greeting = 'Welcome! ' ;
-}
-}
-
-console.log(test(morning, evening, noon, afternoon));
-
-
-document .write('<h3>' +greeting +'</h3>'); 
-
-
-
-function vote(){
-    voteforAlaa=window.open("Vote");
+    greeting = 'Welcome!';
 }
 
-function cancel(){}
-if (confirm("vote for Alaa")) {
-    vote();
-} else {cancel();}
- vote();
- 
-
+document.write('<h3>' + greeting + '</h3>');
