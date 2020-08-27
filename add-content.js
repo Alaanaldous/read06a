@@ -32,7 +32,7 @@ sayHello();
 
 var pass = 50;
 var score = 75;
-var msg;
+var msg = '';
 
 function alaaPassed() { 
     grade = window.prompt('write Alaa\'s grade' , 'here' );
